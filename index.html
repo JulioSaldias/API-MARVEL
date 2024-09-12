@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARVEL</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" id="nav-characters">Personajes</a></li>
+        <li><a href="#" id="nav-comics">Cómics</a></li>
+        <li><a href="#" id="nav-movies">Películas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="search">
+      <h1>Explora el Universo Marvel</h1>
+      <input type="text" id="search-input" placeholder="Busca personajes, cómics, películas..." />
+      <button id="search-button">Buscar</button>
+    </section>
+
+    <section id="results">
+      <div id="characters" class="result-section active">
+        <h2>Personajes</h2>
+        <div id="characters-list" class="result-list"></div>
+      </div>
+      <div id="comics" class="result-section">
+        <h2>Cómics</h2>
+        <div id="comics-list" class="result-list"></div>
+      </div>
+      <div id="movies" class="result-section">
+        <h2>Películas en general</h2>
+        <div id="movies-list" class="result-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Universo Marvel</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
